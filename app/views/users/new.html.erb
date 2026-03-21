@@ -17,10 +17,10 @@
 
 <%= form_with url: "/users", method: :get do |form| %>
   <%= form.label :username %>
-  <%= form.text_field :username %><br><br>
+  <%= form.text_field :username, placeholder: "username goes here" %><br><br>
   <%= form.label :email %>
-  <%= form.email_field :email %><br><br>
+  <%= form.email_field :email, placeholder: "email here" %><br><br>
   <%= form.label :password %>
-  <%= form.password_field :password %><br><br>
+  <%= form.password_field :password, placeholder: "password goes here" %><br><br>
   <%= form.submit "Submit" %>
 <% end %>
