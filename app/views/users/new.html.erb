@@ -15,7 +15,7 @@
 %>
 
 
-<%= form_with url: "/users", method: :get do |form| %>
+<%= form_with model: @user do |form| %>
   <%= form.label :username %>
   <%= form.text_field :username, placeholder: "username goes here" %><br><br>
   <%= form.label :email %>
